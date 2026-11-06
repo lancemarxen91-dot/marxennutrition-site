@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marxen Nutrition</title>
+<meta name="description" content="Marxen Nutrition makes supplements with short ingredient lists and nothing hiding in them. First product coming soon.">
+<meta property="og:title" content="Marxen Nutrition">
+<meta property="og:description" content="Supplements with nothing extra. First product coming soon.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://marxennutrition.com">
+<meta name="theme-color" content="#2A45C4">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%232A45C4'/%3E%3Ctext x='32' y='47' font-family='Arial Black,Arial,sans-serif' font-weight='900' font-size='42' fill='%23fff' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --field: #2A45C4;
+    --field-deep: #1F359E;
+    --paper: #FFFFFF;
+    --ink: #000000;
+    --mist: #C7D2FF;
+    --font: "Archivo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body { margin: 0; }
+
+  body {
+    min-height: 100vh;
+    min-height: 100svh;
+    background: var(--field);
+    color: var(--paper);
+    font-family: var(--font);
+    font-size: 18px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wrap {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  header { padding-top: 32px; }
+
+  .wordmark {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 900;
+    font-stretch: 75%;
+    letter-spacing: 0.02em;
+    line-height: 1;
+  }
+
+  main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 56px 0 64px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+    gap: 72px;
+    align-items: center;
+  }
+
+  h2 {
+    margin: 0 0 24px;
+    font-size: clamp(64px, 11vw, 136px);
+    font-weight: 900;
+    font-stretch: 68%;
+    line-height: 0.86;
+    letter-spacing: -0.01em;
+  }
+
+  .lede {
+    margin: 0 0 36px;
+    max-width: 30em;
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--paper);
+  }
+
+  .cta {
+    display: inline-block;
+    padding: 18px 28px;
+    background: var(--paper);
+    color: var(--ink);
+    font-weight: 800;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 999px;
+    transition: background-color 120ms ease, color 120ms ease;
+  }
+
+  .cta:hover { background: var(--ink); color: var(--paper); }
+
+  .cta:focus-visible,
+  .footer-link:focus-visible {
+    outline: 3px solid var(--paper);
+    outline-offset: 4px;
+  }
+
+  .cta-note {
+    margin: 14px 0 0;
+    font-size: 15px;
+    color: var(--mist);
+  }
+
+  /* The label panel: modeled on a printed facts panel */
+  .label {
+    background: var(--paper);
+    color: var(--ink);
+    border: 2px solid var(--ink);
+    padding: 10px 14px 12px;
+    max-width: 400px;
+    width: 100%;
+    justify-self: end;
+    box-shadow: 14px 14px 0 var(--field-deep);
+  }
+
+  .label h3 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 900;
+    font-stretch: 85%;
+    line-height: 1;
+    letter-spacing: -0.01em;
+  }
+
+  .label .rule-heavy { height: 12px; background: var(--ink); margin: 8px 0 0; }
+  .label .rule-mid { height: 5px; background: var(--ink); margin: 0; }
+
+  .label table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 17px;
+  }
+
+  .label th, .label td {
+    padding: 7px 0;
+    border-bottom: 1px solid var(--ink);
+    text-align: left;
+    font-weight: 500;
+  }
+
+  .label thead th {
+    font-size: 14px;
+    font-weight: 800;
+    padding: 6px 0;
+  }
+
+  .label .amt {
+    text-align: right;
+    font-weight: 900;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .label tbody tr:last-child th,
+  .label tbody tr:last-child td { border-bottom: 0; }
+
+  .label .foot {
+    margin: 8px 0 0;
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  footer {
+    padding: 24px 0 32px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 15px;
+    color: var(--mist);
+  }
+
+  footer .wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .footer-link { color: var(--paper); text-decoration: none; }
+  .footer-link:hover { text-decoration: underline; }
+
+  @media (max-width: 860px) {
+    .grid { grid-template-columns: 1fr; gap: 48px; }
+    .label { justify-self: start; }
+    main { padding: 40px 0 56px; }
+  }
+
+  @media (max-width: 480px) {
+    .wrap { padding: 0 16px; }
+    header { padding-top: 24px; }
+    .lede { font-size: 18px; }
+    .label { box-shadow: 8px 8px 0 var(--field-deep); }
+    .label h3 { font-size: 34px; }
+    .cta { display: block; text-align: center; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .cta { transition: none; }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1 class="wordmark">Marxen Nutrition</h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap grid">
+      <section>
+        <h2>Nothing extra.</h2>
+        <p class="lede">Marxen Nutrition makes supplements with short ingredient lists and nothing hiding in them. Our first product is in the works.</p>
+        <a class="cta" href="mailto:hello@marxennutrition.com?subject=Notify%20me%20at%20launch&amp;body=Let%20me%20know%20when%20Marxen%20Nutrition%20launches.">Get notified at launch</a>
+        <p class="cta-note">Opens an email to hello@marxennutrition.com. We'll write back when it ships.</p>
+      </section>
+
+      <aside class="label" aria-label="What's inside">
+        <h3>What's inside</h3>
+        <div class="rule-heavy"></div>
+        <table>
+          <thead>
+            <tr><th scope="col">Per serving</th><th scope="col" class="amt">Amount</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Fillers</th><td class="amt">0</td></tr>
+            <tr><th scope="row">Artificial sweeteners</th><td class="amt">0</td></tr>
+            <tr><th scope="row">Artificial colors</th><td class="amt">0</td></tr>
+            <tr><th scope="row">Proprietary blends</th><td class="amt">0</td></tr>
+            <tr><th scope="row">Mystery ingredients</th><td class="amt">0</td></tr>
+          </tbody>
+        </table>
+        <div class="rule-mid"></div>
+        <p class="foot">First product in development. Full label published at launch.</p>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <a class="footer-link" href="mailto:hello@marxennutrition.com">hello@marxennutrition.com</a>
+      <span>&copy; 2026 Marxen Nutrition</span>
+    </div>
+  </footer>
+</body>
+</html>
