@@ -3,256 +3,281 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Marxen Nutrition</title>
-<meta name="description" content="Marxen Nutrition makes supplements with short ingredient lists and nothing hiding in them. First product coming soon.">
-<meta property="og:title" content="Marxen Nutrition">
-<meta property="og:description" content="Supplements with nothing extra. First product coming soon.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://marxennutrition.com">
-<meta name="theme-color" content="#2A45C4">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%232A45C4'/%3E%3Ctext x='32' y='47' font-family='Arial Black,Arial,sans-serif' font-weight='900' font-size='42' fill='%23fff' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+<title>Marxen Nutrition | Creatine Monohydrate</title>
+<meta name="description" content="Creatine monohydrate. One ingredient. Nothing else. Join the Marxen Nutrition waitlist.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --field: #2A45C4;
-    --field-deep: #1F359E;
-    --paper: #FFFFFF;
-    --ink: #000000;
-    --mist: #C7D2FF;
-    --font: "Archivo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --bg: #f6f5f1;
+    --surface: #ffffff;
+    --ink: #111111;
+    --muted: #5d5d58;
+    --line: #dcdad2;
+    --accent: #c4361b;
+    --accent-ink: #ffffff;
   }
-
-  * { box-sizing: border-box; }
-
-  html, body { margin: 0; }
-
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f0f0e;
+      --surface: #181816;
+      --ink: #f2f1ec;
+      --muted: #a3a29b;
+      --line: #2c2c29;
+      --accent: #e5502f;
+      --accent-ink: #ffffff;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
   body {
-    min-height: 100vh;
-    min-height: 100svh;
-    background: var(--field);
-    color: var(--paper);
-    font-family: var(--font);
-    font-size: 18px;
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .wrap {
-    width: 100%;
-    max-width: 1120px;
-    margin: 0 auto;
-    padding: 0 24px;
-  }
-
-  header { padding-top: 32px; }
-
-  .wordmark {
-    margin: 0;
-    font-size: 22px;
-    font-weight: 900;
-    font-stretch: 75%;
-    letter-spacing: 0.02em;
-    line-height: 1;
-  }
-
-  main {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    padding: 56px 0 64px;
-  }
-
-  .grid {
-    display: grid;
-    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
-    gap: 72px;
-    align-items: center;
-  }
-
-  h2 {
-    margin: 0 0 24px;
-    font-size: clamp(64px, 11vw, 136px);
-    font-weight: 900;
-    font-stretch: 68%;
-    line-height: 0.86;
-    letter-spacing: -0.01em;
-  }
-
-  .lede {
-    margin: 0 0 36px;
-    max-width: 30em;
-    font-size: 20px;
-    line-height: 1.5;
-    color: var(--paper);
-  }
-
-  .cta {
-    display: inline-block;
-    padding: 18px 28px;
-    background: var(--paper);
+    background: var(--bg);
     color: var(--ink);
-    font-weight: 800;
-    font-size: 18px;
-    text-decoration: none;
-    border-radius: 999px;
-    transition: background-color 120ms ease, color 120ms ease;
-  }
-
-  .cta:hover { background: var(--ink); color: var(--paper); }
-
-  .cta:focus-visible,
-  .footer-link:focus-visible {
-    outline: 3px solid var(--paper);
-    outline-offset: 4px;
-  }
-
-  .cta-note {
-    margin: 14px 0 0;
-    font-size: 15px;
-    color: var(--mist);
-  }
-
-  /* The label panel: modeled on a printed facts panel */
-  .label {
-    background: var(--paper);
-    color: var(--ink);
-    border: 2px solid var(--ink);
-    padding: 10px 14px 12px;
-    max-width: 400px;
-    width: 100%;
-    justify-self: end;
-    box-shadow: 14px 14px 0 var(--field-deep);
-  }
-
-  .label h3 {
-    margin: 0;
-    font-size: 40px;
-    font-weight: 900;
-    font-stretch: 85%;
-    line-height: 1;
-    letter-spacing: -0.01em;
-  }
-
-  .label .rule-heavy { height: 12px; background: var(--ink); margin: 8px 0 0; }
-  .label .rule-mid { height: 5px; background: var(--ink); margin: 0; }
-
-  .label table {
-    width: 100%;
-    border-collapse: collapse;
+    font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
     font-size: 17px;
+    line-height: 1.55;
   }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+  header { border-bottom: 1px solid var(--line); }
+  header .wrap { display: flex; justify-content: space-between; align-items: center; height: 64px; }
+  .mark { font-family: Archivo, sans-serif; font-weight: 900; letter-spacing: 0.22em; font-size: 18px; }
+  .mark span { color: var(--accent); }
+  header a.cta-link { color: var(--ink); font-weight: 600; font-size: 15px; text-decoration: none; border-bottom: 2px solid var(--accent); padding-bottom: 2px; }
 
-  .label th, .label td {
-    padding: 7px 0;
-    border-bottom: 1px solid var(--ink);
-    text-align: left;
-    font-weight: 500;
+  .hero { padding: 72px 0 64px; }
+  .eyebrow { text-transform: uppercase; letter-spacing: 0.14em; font-size: 13px; font-weight: 600; color: var(--accent); margin-bottom: 18px; }
+  h1 { font-family: Archivo, sans-serif; font-weight: 900; font-size: clamp(40px, 8vw, 84px); line-height: 0.98; letter-spacing: -0.02em; max-width: 12ch; }
+  .lede { margin-top: 24px; font-size: 20px; color: var(--muted); max-width: 34rem; }
+
+  form.signup { margin-top: 36px; display: flex; gap: 10px; max-width: 520px; flex-wrap: wrap; }
+  form.signup input[type=email] {
+    flex: 1 1 240px; min-width: 0; height: 54px; padding: 0 16px; font: inherit;
+    border: 1.5px solid var(--ink); background: var(--surface); color: var(--ink); border-radius: 0;
   }
-
-  .label thead th {
-    font-size: 14px;
-    font-weight: 800;
-    padding: 6px 0;
+  form.signup input[type=email]:focus { outline: 3px solid var(--accent); outline-offset: 1px; }
+  form.signup button {
+    height: 54px; padding: 0 26px; font: inherit; font-weight: 600; cursor: pointer;
+    background: var(--accent); color: var(--accent-ink); border: none; border-radius: 0;
   }
+  form.signup button:hover { filter: brightness(1.08); }
+  form.signup button:disabled { opacity: 0.6; cursor: default; }
+  .form-note { margin-top: 12px; font-size: 14px; color: var(--muted); min-height: 1.4em; }
+  .form-note.ok { color: var(--ink); font-weight: 600; }
+  .hp { position: absolute; left: -9999px; }
 
-  .label .amt {
-    text-align: right;
-    font-weight: 900;
-    font-variant-numeric: tabular-nums;
-  }
+  .facts { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .facts .wrap { display: grid; grid-template-columns: repeat(3, 1fr); }
+  .fact { padding: 32px 0 30px; }
+  .fact + .fact { border-left: 1px solid var(--line); padding-left: 28px; }
+  .fact b { display: block; font-family: Archivo, sans-serif; font-weight: 900; font-size: clamp(36px, 6vw, 56px); line-height: 1; }
+  .fact span { display: block; margin-top: 8px; color: var(--muted); font-size: 15px; }
 
-  .label tbody tr:last-child th,
-  .label tbody tr:last-child td { border-bottom: 0; }
+  section.block { padding: 72px 0; }
+  h2 { font-family: Archivo, sans-serif; font-weight: 700; font-size: clamp(28px, 4.4vw, 40px); line-height: 1.1; letter-spacing: -0.01em; max-width: 20ch; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+  .label { padding: 28px; background: var(--surface); border: 1.5px solid var(--ink); }
+  .label h3 { font-family: Archivo, sans-serif; font-weight: 900; font-size: 22px; border-bottom: 8px solid var(--ink); padding-bottom: 6px; margin-bottom: 8px; }
+  .row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--line); font-size: 15px; }
+  .row:last-child { border-bottom: none; }
+  .row strong { font-weight: 600; }
+  .label .ingr { margin-top: 14px; font-size: 14px; color: var(--muted); }
+  .not { margin-top: 22px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .not span { font-size: 14px; padding: 6px 12px; border: 1px solid var(--line); color: var(--muted); text-decoration: line-through; text-decoration-color: var(--accent); text-decoration-thickness: 2px; }
+  p.body { margin-top: 18px; color: var(--muted); max-width: 32rem; }
 
-  .label .foot {
-    margin: 8px 0 0;
-    font-size: 13px;
-    line-height: 1.4;
-  }
+  .promise { background: var(--ink); color: var(--bg); }
+  .promise h2 { color: var(--bg); }
+  .promise .steps { margin-top: 36px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+  .promise .step b { display: block; font-family: Archivo, sans-serif; font-size: 14px; letter-spacing: 0.14em; color: var(--accent); margin-bottom: 8px; }
+  .promise .step p { color: color-mix(in srgb, var(--bg) 78%, transparent); font-size: 16px; }
 
-  footer {
-    padding: 24px 0 32px;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    font-size: 15px;
-    color: var(--mist);
-  }
+  .faq { max-width: 720px; }
+  details { border-bottom: 1px solid var(--line); padding: 20px 0; }
+  details:first-of-type { margin-top: 28px; border-top: 1px solid var(--line); }
+  summary { cursor: pointer; font-weight: 600; font-size: 18px; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; color: var(--accent); font-weight: 700; }
+  details[open] summary::after { content: "\2212"; }
+  details p { margin-top: 10px; color: var(--muted); }
 
-  footer .wrap {
-    display: flex;
-    justify-content: space-between;
-    gap: 16px;
-    flex-wrap: wrap;
-  }
+  .final { text-align: left; border-top: 1px solid var(--line); }
 
-  .footer-link { color: var(--paper); text-decoration: none; }
-  .footer-link:hover { text-decoration: underline; }
+  footer { border-top: 1px solid var(--line); padding: 32px 0 48px; font-size: 13px; color: var(--muted); }
+  footer .wrap > * + * { margin-top: 10px; }
+  footer a { color: var(--ink); }
+  .disclaimer { max-width: 46rem; }
 
-  @media (max-width: 860px) {
-    .grid { grid-template-columns: 1fr; gap: 48px; }
-    .label { justify-self: start; }
-    main { padding: 40px 0 56px; }
-  }
-
-  @media (max-width: 480px) {
-    .wrap { padding: 0 16px; }
-    header { padding-top: 24px; }
+  @media (max-width: 720px) {
+    .hero { padding: 48px 0 44px; }
     .lede { font-size: 18px; }
-    .label { box-shadow: 8px 8px 0 var(--field-deep); }
-    .label h3 { font-size: 34px; }
-    .cta { display: block; text-align: center; }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .cta { transition: none; }
+    .facts .wrap { grid-template-columns: 1fr; }
+    .fact + .fact { border-left: none; border-top: 1px solid var(--line); padding-left: 0; }
+    .fact { padding: 22px 0; }
+    section.block { padding: 52px 0; }
+    .two { grid-template-columns: 1fr; gap: 32px; }
+    .promise .steps { grid-template-columns: 1fr; gap: 22px; }
+    form.signup button { width: 100%; }
   }
 </style>
 </head>
 <body>
-  <header>
+
+<header>
+  <div class="wrap">
+    <div class="mark">MARXEN<span>.</span></div>
+    <a class="cta-link" href="#join">Join the waitlist</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
     <div class="wrap">
-      <h1 class="wordmark">Marxen Nutrition</h1>
+      <p class="eyebrow">Coming early 2027</p>
+      <h1>Creatine. Nothing else.</h1>
+      <p class="lede">One ingredient: creatine monohydrate. No flavor, no sweetener, no fillers. Just 5 grams a day, mixed into whatever you already drink.</p>
+
+      <form class="signup" id="join" data-form>
+        <label for="email1" class="hp">Email</label>
+        <input id="email1" type="email" name="email" placeholder="you@email.com" autocomplete="email" required>
+        <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button type="submit">Get first access</button>
+      </form>
+      <p class="form-note" data-note>Launch price and first batch go to the waitlist first. No spam.</p>
     </div>
-  </header>
+  </section>
 
-  <main>
-    <div class="wrap grid">
-      <section>
-        <h2>Nothing extra.</h2>
-        <p class="lede">Marxen Nutrition makes supplements with short ingredient lists and nothing hiding in them. Our first product is in the works.</p>
-        <a class="cta" href="mailto:hello@marxennutrition.com?subject=Notify%20me%20at%20launch&amp;body=Let%20me%20know%20when%20Marxen%20Nutrition%20launches.">Get notified at launch</a>
-        <p class="cta-note">Opens an email to hello@marxennutrition.com. We'll write back when it ships.</p>
-      </section>
-
-      <aside class="label" aria-label="What's inside">
-        <h3>What's inside</h3>
-        <div class="rule-heavy"></div>
-        <table>
-          <thead>
-            <tr><th scope="col">Per serving</th><th scope="col" class="amt">Amount</th></tr>
-          </thead>
-          <tbody>
-            <tr><th scope="row">Fillers</th><td class="amt">0</td></tr>
-            <tr><th scope="row">Artificial sweeteners</th><td class="amt">0</td></tr>
-            <tr><th scope="row">Artificial colors</th><td class="amt">0</td></tr>
-            <tr><th scope="row">Proprietary blends</th><td class="amt">0</td></tr>
-            <tr><th scope="row">Mystery ingredients</th><td class="amt">0</td></tr>
-          </tbody>
-        </table>
-        <div class="rule-mid"></div>
-        <p class="foot">First product in development. Full label published at launch.</p>
-      </aside>
-    </div>
-  </main>
-
-  <footer>
+  <section class="facts" aria-label="Product facts">
     <div class="wrap">
-      <a class="footer-link" href="mailto:hello@marxennutrition.com">hello@marxennutrition.com</a>
-      <span>&copy; 2026 Marxen Nutrition</span>
+      <div class="fact"><b>1</b><span>ingredient</span></div>
+      <div class="fact"><b>5 g</b><span>per scoop</span></div>
+      <div class="fact"><b>60</b><span>servings per tub</span></div>
     </div>
-  </footer>
+  </section>
+
+  <section class="block">
+    <div class="wrap two">
+      <div>
+        <h2>The whole label fits on one line.</h2>
+        <p class="body">Most tubs on the shelf add flavors, sweeteners, colors and blends you didn't ask for. Ours lists one thing, because there is only one thing in it.</p>
+        <div class="not" aria-label="What is not in it">
+          <span>Flavors</span><span>Sweeteners</span><span>Dyes</span><span>Fillers</span><span>Proprietary blends</span>
+        </div>
+      </div>
+      <div class="label" aria-label="Supplement facts preview">
+        <h3>Supplement Facts</h3>
+        <div class="row"><span>Serving size</span><strong>1 scoop (5 g)</strong></div>
+        <div class="row"><span>Servings per container</span><strong>60</strong></div>
+        <div class="row"><span>Creatine monohydrate</span><strong>5 g</strong></div>
+        <p class="ingr">Ingredients: creatine monohydrate.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block promise">
+    <div class="wrap">
+      <h2>Proof, not promises.</h2>
+      <div class="steps">
+        <div class="step"><b>01 / MADE</b><p>Will be made in an FDA-registered, cGMP facility in the United States.</p></div>
+        <div class="step"><b>02 / TESTED</b><p>Every batch will be tested for purity, heavy metals and microbes.</p></div>
+        <div class="step"><b>03 / PUBLISHED</b><p>The lab report for each batch goes on this site, matched to the lot number on your tub.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap"><div class="faq">
+      <h2>Questions</h2>
+      <details>
+        <summary>When does it launch?</summary>
+        <p>Early 2027. The waitlist hears first and gets first access to the opening batch.</p>
+      </details>
+      <details>
+        <summary>How much will it cost?</summary>
+        <p>We'll share the launch price with the waitlist before anyone else.</p>
+      </details>
+      <details>
+        <summary>Does it have a taste?</summary>
+        <p>No flavor is added. Unflavored creatine has little to no taste and mixes into water, coffee, a shake or juice.</p>
+      </details>
+      <details>
+        <summary>How do I take it?</summary>
+        <p>One 5 g scoop a day, any time of day. Consistency matters more than timing.</p>
+      </details>
+      <details>
+        <summary>Who is behind Marxen?</summary>
+        <p>Marxen Nutrition is a small, independent brand from Florida built on one rule: if it doesn't need to be in the tub, it isn't.</p>
+      </details>
+    </div></div>
+  </section>
+
+  <section class="block final">
+    <div class="wrap">
+      <h2>Be first in line.</h2>
+      <form class="signup" data-form>
+        <label for="email2" class="hp">Email</label>
+        <input id="email2" type="email" name="email" placeholder="you@email.com" autocomplete="email" required>
+        <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button type="submit">Join the waitlist</button>
+      </form>
+      <p class="form-note" data-note></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>&copy; 2026 Marxen Ventures LLC &middot; Florida &middot; <a href="mailto:hello@marxennutrition.com">hello@marxennutrition.com</a></p>
+    <p class="disclaimer">*These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
+  </div>
+</footer>
+
+<script>
+  // KLAVIYO SETUP: paste your two IDs below.
+  // Company ID (6 characters): Klaviyo > Settings > Account > API keys > "Public API key / Site ID".
+  // List ID: Klaviyo > Audience > Lists & segments > open your "Waitlist" list > Settings > List ID.
+  // Until both are filled in, sign-ups open an email to hello@marxennutrition.com instead.
+  var KLAVIYO_COMPANY_ID = "YOUR_COMPANY_ID";
+  var KLAVIYO_LIST_ID = "YOUR_LIST_ID";
+
+  document.querySelectorAll("[data-form]").forEach(function (form) {
+    var note = form.nextElementSibling;
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (form.querySelector("input[name=_gotcha]").value) return;
+      var email = form.querySelector("input[type=email]").value.trim();
+      if (!email) return;
+      if (KLAVIYO_COMPANY_ID.indexOf("YOUR_") === 0 || KLAVIYO_LIST_ID.indexOf("YOUR_") === 0) {
+        window.location.href = "mailto:hello@marxennutrition.com?subject=Waitlist&body=" + encodeURIComponent("Add me to the waitlist: " + email);
+        return;
+      }
+      var btn = form.querySelector("button");
+      btn.disabled = true;
+      fetch("https://a.klaviyo.com/client/subscriptions/?company_id=" + encodeURIComponent(KLAVIYO_COMPANY_ID), {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "revision": "2024-10-15" },
+        body: JSON.stringify({
+          data: {
+            type: "subscription",
+            attributes: {
+              custom_source: "marxennutrition.com waitlist",
+              profile: { data: { type: "profile", attributes: { email: email } } }
+            },
+            relationships: { list: { data: { type: "list", id: KLAVIYO_LIST_ID } } }
+          }
+        })
+      }).then(function (r) {
+        if (r.ok) {
+          form.reset();
+          note.textContent = "You're on the list. We'll email you before launch.";
+          note.className = "form-note ok";
+        } else { throw new Error(); }
+      }).catch(function () {
+        note.textContent = "Something went wrong. Email hello@marxennutrition.com and we'll add you.";
+        note.className = "form-note";
+      }).finally(function () { btn.disabled = false; });
+    });
+  });
+</script>
 </body>
 </html>
